@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 # convert the image in to Grayscale
-original_Image = cv2.imread('Image1.jpg', cv2.IMREAD_GRAYSCALE)
+original_Image = cv2.imread('Image1.jpg',cv2.IMREAD_GRAYSCALE)
 # convert the image in to RGB colors
 #original_Image = cv2.cvtColor(cv2.imread('Image1.jpg'), cv2.COLOR_BGR2RGB)
 
