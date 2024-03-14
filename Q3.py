@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the image
-original_Image = cv2.cvtColor(cv2.imread('pic1.jpg'), cv2.COLOR_BGR2RGB)
+original_Image = cv2.cvtColor(cv2.imread('Image1.jpg'), cv2.COLOR_BGR2RGB)
 
 def rotate_image(original_Image, angle):
     # Height and width of the image

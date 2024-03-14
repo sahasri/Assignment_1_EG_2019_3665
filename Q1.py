@@ -1,8 +1,10 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+# convert the image in to Grayscale
+original_Image = cv2.imread('Image1.jpg', cv2.IMREAD_GRAYSCALE)
 # convert the image in to RGB colors
-original_Image = cv2.cvtColor(cv2.imread('pic2.jpg'), cv2.COLOR_BGR2RGB)
+#original_Image = cv2.cvtColor(cv2.imread('pic1.jpg'), cv2.COLOR_BGR2RGB)
 # Get desired number of intensity levels from user and handling invalid inputs
 for _ in iter(int, 1):
     try:
@@ -31,9 +33,10 @@ adjusted_Image = reduce_levels(original_Image,intensity_levels)
 # Show the image
 fig, axs = plt.subplots(1, 2, figsize=(12,6))
 # Display the original image in the first subplot
-axs[0].imshow(original_Image)
+axs[0].imshow(original_Image,cmap="gray")
 axs[0].set_title("Original image\n")
 # Display the reduced intensity image in the second subplot
-axs[1].imshow(adjusted_Image)
+axs[1].imshow(adjusted_Image,cmap="gray")
 axs[1].set_title("Image with 2^{} intensity levels\n".format(intensity_levels))
+
 plt.show()
