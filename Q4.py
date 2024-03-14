@@ -38,7 +38,7 @@ replaced_5x5 = average_blocks(original_image, 5)
 replaced_7x7 = average_blocks(original_image, 7)
 
 # Plot the original and downscaled images
-fig, axs = plt.subplots(2, 2, figsize=(7,12))
+fig, axs = plt.subplots(2, 2, figsize=(6,12))
 axs[0,0].imshow(original_image,  cmap='gray')
 axs[0,0].set_title("Original image\n")
 axs[0,1].imshow(replaced_3x3,cmap='gray')
